@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  #section {
+    padding: 50px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .image-container-left, .image-container-right {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    transition: width 0.5s ease; /* Smooth transition for resizing */
+    overflow: hidden; /* Hide any overflow content */
+    position: relative; /* Ensure elements within stay confined */
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes image cover container without distortion */
+  }
+  
+  .parallax-image {
+    position: absolute;
+    width: 300px;
+    transition: transform 0.1s ease;
+  }
+  
