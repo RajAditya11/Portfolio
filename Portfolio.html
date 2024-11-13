@@ -143,8 +143,7 @@
 
         #mainScreen {
             margin-bottom: 50px;
-            width: 100%;
-            height: auto;
+            height: 60vh;
             padding: 25px;
             padding-bottom: 0px;
             display: flex;
@@ -160,10 +159,42 @@
         }
 
         #leftScreen {
+            position: relative;
             display: flex;
             align-items: center;
             width: 50%;
             height: 100%;
+        }
+
+        .text-div {
+            position: absolute;
+            margin: 15px;
+        }
+
+        #text-coder{
+            left: 0;
+            color: #323232;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            font-size: 34px;
+            margin: 15px;
+        }
+        #text-designer{
+            right: 0;
+            color: #323232;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            font-size: 34px;
+            margin: 15px;
+        }
+        #text-desinger > .text-para {
+            color: #838383;
+            margin: 15px;
+            font-size: 18px;
         }
 
         #rightScreen {
@@ -390,11 +421,21 @@
     <main>
         <div id="mainScreen">
             <div id="leftScreen">
-                <img id="mainscreenImage" src="asset/image1.jpg" alt="left-image" />
+                <img id="mainscreenImage" src="asset/image1.jpg" alt="left-image">
+                <div class="text-div">
+                    <h1 id="text-coder">
+                        < Coder>
+                    </h1>
+                    <p class="text-para">Front end developer who writes clean, elegant and efficient code.</p>
+                </div>
             </div>
 
             <div id="rightScreen">
-                <img id="mainscreenImage" src="asset/image2.jpg" alt="right-image" />
+                <img id="mainscreenImage" src="asset/image2.jpg" alt="right-image">
+                <div class="text-div">
+                    <h1 id="text-designer"> .Designer </h1>
+                    <p class="text-para">Product designer specializing in UI design and System Design.</p>
+                </div>
             </div>
         </div>
 
